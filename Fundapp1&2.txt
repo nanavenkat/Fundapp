@@ -1,0 +1,9 @@
+1) $url = "RequiredURL/mysql.exe"
+$outpath = "$PSScriptRoot/mysql.exe"
+Invoke-WebRequest -URL $url -OutFile $outpath
+
+Get-FileHash <filename> -Algorithm md5
+$Logfile = <path\Logs\$.log"
+
+2) forfiles -p C:\Windows\logs\ -s -m *.* /D -7 /c "cmd /c del /q @path".
+Use task scheduler to run this everyday
